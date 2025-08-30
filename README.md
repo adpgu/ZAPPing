@@ -5,6 +5,7 @@ A native macOS network utility for monitoring multiple hosts with real-time ICMP
 ![macOS](https://img.shields.io/badge/macOS-14.0%2B-blue)
 ![Version](https://img.shields.io/github/v/release/yourusername/zap-ping)
 ![License](https://img.shields.io/badge/license-Proprietary-orange)
+![Freeware](https://img.shields.io/badge/price-FREE-brightgreen)
 
 ## Features
 
