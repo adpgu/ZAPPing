@@ -3,7 +3,7 @@
 A native macOS network utility for monitoring multiple hosts with real-time ICMP ping statistics.
 
 ![macOS](https://img.shields.io/badge/macOS-14.0%2B-blue)
-![Version](https://img.shields.io/github/v/release/adpgu/zap-ping)
+![Version](https://img.shields.io/github/v/release/adpgu/ZAPPing)
 ![License](https://img.shields.io/badge/license-Proprietary-orange)
 ![Freeware](https://img.shields.io/badge/price-FREE-brightgreen)
 
