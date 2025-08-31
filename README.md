@@ -80,10 +80,14 @@ This application:
 **"Application cannot be opened" error**
 - Right-click the app and select "Open" instead of double-clicking
 
+**"Application does not quit immediately"**
+- Wait for at least 30 seconds before attempting to force quit to give the OS time to close ICMP sockets
+
 **No ping responses**
 - Verify the target host allows ICMP
 - Check your network firewall settings
 - Some hosts block ping requests by policy
+- Ensure app has access to local network in system settings
 
 **High CPU usage with many hosts**
 - Increase the ping interval
