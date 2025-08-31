@@ -64,7 +64,7 @@ A native macOS network utility for monitoring multiple hosts with real-time ICMP
 
 ZAP Ping uses low-level ICMP sockets for accurate ping measurements without requiring root privileges. Hosts are processed in parallel groups for optimal performance while respecting system resource limits.
 
-NOTE: When a lot of sockets are opened (pinging many hosts), it can take the app quite some time to completely close. If you try to force quit, it might through a beachball because the MacOS cleans up the sockets. Give it some time and the beachball will go away once the OS finishes closing the ping sockets. 
+NOTE: When a lot of sockets are opened (pinging many hosts), it can take the app quite some time to completely close. If you try to force quit, it might throw a beachball because the MacOS cleans up the sockets. Give it some time and the beachball will go away once the OS finishes closing the ping sockets. 
 
 ## Privacy & Network Access
 
