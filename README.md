@@ -27,7 +27,7 @@ A native macOS network utility for monitoring multiple hosts with real-time ICMP
 
 ## Installation
 
-1. Download the latest DMG from the [Releases](https://github.com/yourusername/zap-ping/releases) page
+1. Download the latest DMG from the [Releases]([https://github.com/yourusername/zap-ping/releases) page
 2. Open the downloaded DMG file
 3. Drag ZAP Ping to your Applications folder
 4. Launch from Applications or Spotlight
@@ -64,13 +64,16 @@ A native macOS network utility for monitoring multiple hosts with real-time ICMP
 
 ZAP Ping uses low-level ICMP sockets for accurate ping measurements without requiring root privileges. Hosts are processed in parallel groups for optimal performance while respecting system resource limits.
 
+NOTE: When a lot of sockets are opened (pinging many hosts), it can take the app quite some time to completely close. If you try to force quit, it might through a beachball because the MacOS cleans up the sockets. Give it some time and the beachball will go away once the OS finishes closing the ping sockets. 
+
 ## Privacy & Network Access
 
 This application:
 - Only makes outbound ICMP echo requests to configured hosts
 - Does not collect or transmit any user data
 - Does not communicate with any external services
-- Stores configuration locally in application preferences
+- Stores configuration locally in application preferences while running
+- Saves nothing to local disc unless using export to csv option, when app closes all collected ping stats are gone
 
 ## Troubleshooting
 
@@ -89,8 +92,8 @@ This application:
 
 ## Known Limitations
 
-- Maximum recommended hosts: 1000 per window
-- CIDR expansion limited to 65,536 addresses
+- Maximum recommended hosts: 500 per window
+- CIDR expansion limited to 65,536 addresses (a /16 most likely wont work unless you really space out the ping interval)
 - Some IPv6 link-local addresses may require manual scope ID entry
 
 ## License & Disclaimer
@@ -103,11 +106,15 @@ This software is provided **"AS IS"**, without warranty of any kind, express or 
 
 ## Distribution
 
-This is proprietary software distributed as freeware. The source code is not publicly available. Redistribution of the binary is permitted only in unmodified form with all original files intact.
+This is proprietary software distributed as freeware. The source code is not publicly available. Redistribution of the binary is permitted only in unmodified form with all original files intact. Please include this readme and a link to this repo if distributing. 
 
 ## Support
 
 This software is provided without formal support. Issues may be reported via GitHub Issues but responses are not guaranteed.
+
+## Feature Requests
+
+If there is something you would like this app to do, please request via github. 
 
 ## Credits
 
