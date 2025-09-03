@@ -27,7 +27,7 @@ A native macOS network utility for monitoring multiple hosts with real-time ICMP
 
 ## Installation
 
-1. Download the latest DMG from the [Releases](https://github.com/yourusername/zap-ping/releases) page
+1. Download the latest DMG from the [Releases](https://github.com/adpgu/ZAPPing/releases) page
 2. Open the downloaded DMG file
 3. Drag ZAP Ping to your Applications folder
 4. Launch from Applications or Spotlight
